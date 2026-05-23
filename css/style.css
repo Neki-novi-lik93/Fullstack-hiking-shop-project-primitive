@@ -354,6 +354,17 @@ body { width:100%; height:100%; margin:0; padding:0; } */
     width: 100%;
   }
 
+  .line-icons-about.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
+  }
+  .icons-only a i{
+    font-size: 2.5rem;
+    margin: 15px;
+  }
+
   /* "About and contact" end */
 
   /* CART start */
