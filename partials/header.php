@@ -16,6 +16,7 @@
     <?php endif; ?>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Hiking shop but mine</title>
 </head>
 

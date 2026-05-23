@@ -75,6 +75,7 @@ button {
 
 .active {
   color: #3a8bcd;
+  text-decoration: underline;
 }
 
 .btn-danger {
@@ -434,5 +435,8 @@ input.btn.btn-primary {
   background: #3a8bcd;
   border: none;
   color: white;
+}
+button.btn.btn-warning {
+  background-color: #ffc107;
 }
 /* MANAGE end */
