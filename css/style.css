@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Open+Sans:ital,wght@0,400;1,300&display=swap");
 
+@layer base, responsive;
+
+@layer base {
+
 /* css reset start */
 /* <!--
 Source - https://stackoverflow.com/a/18148143
@@ -85,7 +89,6 @@ button {
 .icons {
   text-align: center;
 }
-
 .container {
   width: 70%;
   margin: auto;
@@ -143,6 +146,10 @@ nav ul li {
   text-transform: uppercase;
   margin: 5px 40px;
 }
+
+.burger{
+  display: none;
+}
 /* Nav end */
 
 /* Footer start */
@@ -168,6 +175,11 @@ footer article nav ul li {
   padding: 10px;
   border-radius: 5px;
   border: none;
+}
+
+button.contactButton{
+  background-color:#5859a1;
+  margin: 25px 10px;
 }
 /* Footer end */
 
@@ -440,3 +452,4 @@ button.btn.btn-warning {
   background-color: #ffc107;
 }
 /* MANAGE end */
+}

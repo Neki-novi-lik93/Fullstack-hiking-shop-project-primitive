@@ -1,38 +1,56 @@
-@media (max-width: 412px) {
-    
+@layer responsive {
+  @media (max-width: 412px) {
+    * {
+      flex-direction: column;
+      margin: 0 auto;
+    }
 
+    /* Body start */
 
+    /* Body end */
 
+    /* Index start */
 
+    header {
+      margin: 0;
+    }
+    header .container {
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+    }
+    header .container article {
+      margin: 0 auto;
+      /* padding: 0; */
+      width: 100%;
+    }
+    a.order-now{
+        width:70%;
+        margin: 15px auto;
+        padding: 10;
+    }
+    main {
+      margin: 0 auto;
+    }
 
+    /* Index end */
 
+    /* Nav start */
 
+    nav ul {
+      text-align: center;
+      padding: 0;
+    }
 
+    /* Nav end */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /* Subscribe start */
+    input.emailInput {
+      margin: 30px;
+    }
+    button.contactButton {
+      margin: 10px;
+    }
+    /* Subscribe end */
+  }
 }
