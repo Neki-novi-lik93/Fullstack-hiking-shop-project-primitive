@@ -12,7 +12,7 @@
                 adipisci
                 velit!
             </p>
-            <a class="order-now" href="">Order now</a>
+            <a class="order-now" href="products.php">Order now</a>
         </article>
     </div>
 </header>

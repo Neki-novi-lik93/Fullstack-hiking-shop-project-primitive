@@ -39,8 +39,8 @@ article.header-article {
   background-color: rgba(255, 255, 255, 0.6);
   display: flex;
   flex-direction: column;
-  width: 40%;
-  padding: 30px;
+  width: 50%;
+  padding: 30px 50px;
   margin: 20px;
 }
 
@@ -68,12 +68,20 @@ h6 {
   font-family: "Coda Caption", sans-serif;
 }
 
+h2.hiking-shop {
+  display: flex;
+  justify-content: center;
+}
+
 article.header-article .order-now {
   padding: 10px 40px;
   background-color: #3a8bcd;
   color: white;
   border-radius: 5px;
-  width: auto;
+  width: 50%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 5px;
 }
 article.header-article .order-now:hover {
   background-color: black;
@@ -118,6 +126,7 @@ nav ul li {
 article.hiking-shop {
   margin-top: 40px;
   border-top: solid lightslategray 0.5px;
+  text-align: center;
 }
 footer article nav ul li {
   margin: 0 10px;
@@ -144,9 +153,6 @@ button {
   justify-content: center;
 }
 .icons {
-  text-align: center;
-}
-.hiking-shop {
   text-align: center;
 }
 .featured-items {
@@ -211,6 +217,12 @@ button {
   display: block;
   content: "";
   clear: both;
+}
+
+.container-table{
+    width: 70%;
+  margin: auto;
+  padding: 50px;
 }
 
 /* Products */
@@ -310,9 +322,23 @@ td img {
 }
 
 td button {
+  padding: 12px 16px;
   margin: 0 auto;
+  min-width: 100px;
+  /* display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center; */
 }
-
+.button-add-item{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btn.btn-primary.add-btn{
+  margin-top: 17px;
+  width: 30%;
+}
 .cart-container > button {
   /* target clear cart */
   background-color: #5859a1;
@@ -350,9 +376,21 @@ input#form-image.form-control {
 input#form-image.form-control::file-selector-button {
   height: 100%;
   background: #f5f5f5;
-  padding: 10px 15px;
+  padding: 20px 15px;
   margin-right: 5px;
   border: none;
-  border-right: 1px solid rgb(225,225,225);
+  border-right: 1px solid rgb(225, 225, 225);
+}
+
+input.btn.btn-primary {
+  padding: 15px 40px;
+  margin: 0 0 7px 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #3a8bcd;
+  border: none;
+  color: white;
 }
 /* MANAGE end */

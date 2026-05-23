@@ -45,13 +45,18 @@ $scripts[] = 'manage.js';
                 <input type="file" name="img" id="form-image" class="form-control">
 
             </div>
-
-            <input type="submit" value="Add" class="btn  btn-primary" id="add-btn">
+            <div class="button-add-item">
+                <input type="submit" value="Add item" class="btn  btn-primary add-btn" id="add-btn">
+            </div>
 
         </form>
 
         <button class="btn btn-warning" id="save-btn" hidden>Save</button>
         <button class="btn btn-danger" id="cancel-btn" hidden>Cancel</button>
+
+    </section>
+
+    <section class="container-table">
 
         <table class="table table-striped">
             <thead>

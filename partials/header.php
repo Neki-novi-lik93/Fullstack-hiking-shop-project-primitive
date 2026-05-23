@@ -16,9 +16,12 @@
    
         <!-- Top bar -->
         <section class="topbar">
-            <a href="" class="hiking-shop">
-                <h1><i class="fas fa-hiking"></i>&nbsp;Hiking shop</h1>
-            </a>
+            <h1>
+                <a href="" class="hiking-shop">
+                    <i class="fas fa-hiking"></i>&nbsp;Hiking shop
+                </a>
+            </h1>
+
         </section>
         <?php include 'partials/nav.php' ?>
     

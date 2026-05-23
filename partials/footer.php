@@ -11,9 +11,11 @@
 
 
     <article class="container">
-        <a href="" class="hiking-shop">
-            <h2><i class="fas fa-hiking"></i> Hiking shop</h2>
-        </a>
+        <h2 class="hiking-shop">
+            <a href="" class="hiking-shop">
+                <i class="fas fa-hiking"></i>&nbsp;Hiking shop
+            </a>
+        </h2>
         <?php include 'partials/nav.php' ?>
         <div class="icons">
             <a href=""><i class="fab fa-facebook-square"></i></a>
@@ -30,7 +32,7 @@
 
 <?php if (!empty($scripts)): ?>
     <?php foreach ($scripts as $script): ?>
-        <script src="<?= './js/'.$script ?>"></script>
+        <script src="<?= './js/' . $script ?>"></script>
     <?php endforeach; ?>
 <?php endif; ?>
 
