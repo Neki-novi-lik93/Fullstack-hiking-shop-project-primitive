@@ -1,6 +1,7 @@
 <?php include 'partials/header.php' ?>
 <?php
 $scripts[] = 'single.js';
+$scripts[] = 'carousel.js';
 ?>
 <main class="single-main container small-dash-before">
     <h2>Single product</h2>

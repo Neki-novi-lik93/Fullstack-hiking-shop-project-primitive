@@ -1,4 +1,8 @@
-<?php include 'partials/header.php' ?>
+<?php
+$useCarousel = true;
+include 'partials/header.php';
+$scripts[] = 'index.js';
+?>
 
 <!-- Header -->
 <header>
@@ -20,17 +24,20 @@
 
 <main class="featured-items container small-dash-before">
     <h2>Featured items</h2>
-    <article class="owl-carousel owl-theme">
-            <div class="item">
-                <a href="single1.html">
-                    <img src="img/boots.jpg" alt="">
-                    <h3>Boots</h3>
-                    <p>$220</p>
-                </a>
-            </div>
-        </article>
+    <article class="owl-carousel owl-theme" id="carousel-featured">
+        <!-- This is how a single item should look -->
+        <!-- <div class="item">
+            <a href="single1.html">
+                <img src="img/boots.jpg" alt="">
+                <h3>Boots</h3>
+                <p>$220</p>
+            </a>
+        </div> -->
+    </article>
 </main>
-
+<?php
+$scripts[] = 'carousel.js';
+?>
 
 
 <?php include 'partials/footer.php' ?>

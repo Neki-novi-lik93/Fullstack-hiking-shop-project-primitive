@@ -37,6 +37,13 @@
     </article>
 </footer>
 
+    <?php if (isset($useCarousel)): ?>
+
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <?php endif; ?>
+
 <?php if (!empty($scripts)): ?>
     <?php foreach ($scripts as $script): ?>
         <script src="<?= './js/' . $script ?>"></script>

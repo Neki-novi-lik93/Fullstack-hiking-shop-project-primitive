@@ -224,6 +224,25 @@ article.hiking-shop {
 
 /* Index end */
 
+/* Featured items start */
+
+.featured-items h2 {
+  margin-bottom: 30px;
+}
+
+.featured-items .owl-carousel .item {
+  border: 1px solid #eeeeee;
+  padding: 30px;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.featured-items .owl-carousel .item:hover {
+  border: 1px solid #3a8bcd;
+}
+
+/* Featured items end */
+
 /* Products start */
 
 .products-section article {
