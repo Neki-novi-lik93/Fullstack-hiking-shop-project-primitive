@@ -21,9 +21,156 @@ body {
 
 /* css reset done */
 
+/* Body start */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Coda Caption", sans-serif;
+}
+
 a {
   display: inline-block;
+  text-decoration: none;
+  color: black;
 }
+
+button {
+  padding: 15px 40px;
+  margin-top: 25px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #3a8bcd;
+  border: none;
+  color: white;
+}
+
+.small-dash-after::after {
+  display: flex;
+  content: "";
+  width: 35px;
+  height: 3px;
+  background-color: #3a8bcd;
+  margin-top: 20px;
+}
+.small-dash-before::before {
+  display: block;
+  content: "";
+  width: 35px;
+  height: 3px;
+  background-color: #3a8bcd;
+  margin: 20px 0;
+}
+
+.active {
+  color: #3a8bcd;
+}
+
+.btn-danger {
+  background-color: rgb(204, 91, 91);
+}
+
+.icons {
+  text-align: center;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  padding: 100px 0;
+}
+.container::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.container-table {
+  width: 70%;
+  margin: auto;
+  padding: 50px;
+}
+
+/* Body end */
+
+/* Topbar start */
+
+.topbar {
+  border-top: 5px solid #3a8bcd;
+  border-bottom: 1px solid rgb(246, 246, 246);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+h1 .fa-hiking {
+  font-size: 40px;
+}
+
+h2.hiking-shop {
+  display: flex;
+  justify-content: center;
+}
+
+a.hiking-shop {
+  color: #3a8bcd;
+  text-align: center;
+}
+
+/* Topbar end */
+
+/* Nav start */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  text-transform: uppercase;
+  margin: 5px 40px;
+}
+/* Nav end */
+
+/* Footer start */
+
+footer article nav ul li {
+  margin: 0 10px;
+}
+
+.subscribe {
+  text-align: center;
+  background-color: #3a8bcd;
+  padding: 80px;
+}
+.subscribe h3 {
+  font-size: 24px;
+}
+
+.loremSubscribe {
+  color: white;
+}
+
+.emailInput {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+/* Footer end */
+
+/* Index start */
 
 header {
   background-image: url(../img/header.jpg);
@@ -48,31 +195,6 @@ a i {
   color: black;
 }
 
-a.hiking-shop {
-  color: #3a8bcd;
-  text-align: center;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Coda Caption", sans-serif;
-}
-
-h2.hiking-shop {
-  display: flex;
-  justify-content: center;
-}
-
 article.header-article .order-now {
   padding: 10px 40px;
   background-color: #3a8bcd;
@@ -89,141 +211,20 @@ article.header-article .order-now:hover {
 .loremHeader {
   margin-top: 0;
 }
-.small-dash-after::after {
-  display: flex;
-  content: "";
-  width: 35px;
-  height: 3px;
-  background-color: #3a8bcd;
-  margin-top: 20px;
-}
-.small-dash-before::before {
-  display: block;
-  content: "";
-  width: 35px;
-  height: 3px;
-  background-color: #3a8bcd;
-  margin: 20px 0;
-}
 
-h1 .fa-hiking {
-  font-size: 40px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-nav ul li {
-  text-transform: uppercase;
-  margin: 5px 40px;
-}
 article.hiking-shop {
   margin-top: 40px;
   border-top: solid lightslategray 0.5px;
   text-align: center;
 }
-footer article nav ul li {
-  margin: 0 10px;
-}
 
-button {
-  padding: 15px 40px;
-  margin-top: 25px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  border-radius: 5px;
-  cursor: pointer;
-  background: #3a8bcd;
-  border: none;
-  color: white;
-}
-
-.topbar {
-  border-top: 5px solid #3a8bcd;
-  border-bottom: 1px solid rgb(246, 246, 246);
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-.icons {
-  text-align: center;
-}
 .featured-items {
   margin: 80px 330px;
 }
-.subscribe {
-  text-align: center;
-  background-color: #3a8bcd;
-  padding: 80px;
-}
-.subscribe h3 {
-  font-size: 24px;
-}
-.loremSubscribe {
-  color: white;
-}
-.emailInput {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-}
 
-.about-main,
-.contact-main {
-  width: 70%;
-  margin: auto;
-  padding: 100px 0;
-}
-.about-article,
-.contact-article {
-  display: flex;
-  gap: 40px;
-}
-.about-article:last-child {
-  box-sizing: border-box;
-}
-.about-img {
-  width: 100%;
-  display: block;
-}
+/* Index end */
 
-.contact-article-part {
-  width: 100%;
-}
-
-.contact-input {
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 15px;
-}
-
-
-
-.container {
-  width: 70%;
-  margin: auto;
-  padding: 100px 0;
-}
-.container::after {
-  display: block;
-  content: "";
-  clear: both;
-}
-
-.container-table{
-    width: 70%;
-  margin: auto;
-  padding: 50px;
-}
-
-/* Products */
+/* Products start */
 
 .products-section article {
   display: flex;
@@ -246,12 +247,10 @@ button {
 .products-section article .item img {
   width: 100%;
 }
-.btn-danger {
-  background-color: rgb(204, 91, 91);
-}
+
 /* Products end */
 
-/* SINGLE */
+/* Single start*/
 .single-main article {
   display: flex;
   flex-wrap: wrap;
@@ -290,13 +289,43 @@ button {
   margin: 0 10px;
 }
 
-/* SINGLE end */
+/* Single end */
 
-.active {
-  color: #3a8bcd;
+/* "About and contact" start */
+
+.about-main,
+.contact-main {
+  width: 70%;
+  margin: auto;
+  padding: 100px 0;
+}
+.about-article,
+.contact-article {
+  display: flex;
+  gap: 40px;
+}
+.about-article:last-child {
+  box-sizing: border-box;
+}
+.about-img {
+  width: 100%;
+  display: block;
 }
 
+.contact-article-part {
+  width: 100%;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+/* "About and contact" end */
+
 /* CART start */
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -323,17 +352,13 @@ td button {
   padding: 12px 16px;
   margin: 0 auto;
   min-width: 100px;
-  /* display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center; */
 }
-.button-add-item{
+.button-add-item {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.btn.btn-primary.add-btn{
+.btn.btn-primary.add-btn {
   margin-top: 17px;
   width: 30%;
 }
@@ -343,7 +368,7 @@ td button {
 }
 
 tbody tr:last-child td {
-  /* Total price targeted */
+  /* total price targeted */
   background-color: #fff;
 }
 

@@ -18,10 +18,17 @@
 </header>
 <!-- Main -->
 
-<main class="featured-items small-dash-before">
+<main class="featured-items container small-dash-before">
     <h2>Featured items</h2>
-    <p>Ovde posle dodaj carousel kad skontas kako radi</p>
-    <p>CAROUSEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEL</p>
+    <article class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="single1.html">
+                    <img src="img/boots.jpg" alt="">
+                    <h3>Boots</h3>
+                    <p>$220</p>
+                </a>
+            </div>
+        </article>
 </main>
 
 
