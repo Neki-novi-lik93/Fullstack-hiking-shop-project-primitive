@@ -54,7 +54,7 @@
       /* padding: 0; */
       margin: 0 auto;
     }
-    footer article.container .icons a i {
+    .icons a i {
       font-size: 30px;
       margin: 10px;
     }
@@ -88,10 +88,15 @@
 
     /* Subscribe start */
     input.emailInput {
-      margin: 30px;
+      margin:20px;
     }
     button.subscribeButton {
-      margin: 10px;
+      margin: 0 auto;
+      width: 80%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     /* Subscribe end */
 
@@ -101,14 +106,21 @@
     }
     section.products-section.container {
       min-height: 50vh;
+      width: 90%;
     }
     /* Products end */
 
     /* About start */
 
+    .line-icons-about.icons {
+      display: flex;
+      flex-direction: column;
+    }
+
     main.about-main.small-dash-before {
       margin: 10px auto;
       padding: 0;
+      width: 90%;
     }
     .line-icons-about {
       margin: 10px auto;
@@ -124,7 +136,9 @@
     /* About end */
 
     /* Contact start */
-
+    main.contact-main {
+      width: 90%;
+    }
     input {
       margin: 5px auto;
     }
@@ -176,7 +190,10 @@
     /* Cart end */
 
     /* Manage start */
-
+    main .container,
+    .container-table {
+      width: 90%;
+    }
     main.manage-main .container h3 {
       text-align: center;
     }
@@ -194,12 +211,14 @@
       margin: 10px auto;
     }
     input.btn.btn-primary {
-      margin-top: 10px;
-      width: 100%;
+      margin-top: 20px;
+      width: 50%;
+    }
+    input#form-image {
+      margin: auto;
     }
     input#form-image.form-control {
-      margin: 0;
-      width: 100%;
+      width: 80%;
     }
     input#form-image.form-control::file-selector-button {
       margin: 0 15px 0 0;
@@ -210,7 +229,6 @@
       display: flex;
       flex-direction: row;
       width: 80%;
-      /* justify-content: center; */
     }
 
     .partialHiddenButton {
@@ -257,9 +275,6 @@
       /* max-width: fit-content; */
       margin: 0 auto;
       justify-content: center;
-    }
-    .container-table {
-      width: 90%;
     }
     /* Manage end */
   }
